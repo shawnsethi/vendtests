@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product: MyText
+  person: MyText
+  machine: MyText
+  door_position: MyText
+  stock_method: MyText
+  stock_method: MyText
+  required_vengo_box: false
+  coil_type: 1
+  bay: 1
+  arduino_version: MyText
+  jiggle: false
+  product_fold: false
+  coil_position: MyText
+  spin_type: MyText
+  notes: MyText
+
+two:
+  product: MyText
+  person: MyText
+  machine: MyText
+  door_position: MyText
+  stock_method: MyText
+  stock_method: MyText
+  required_vengo_box: false
+  coil_type: 1
+  bay: 1
+  arduino_version: MyText
+  jiggle: false
+  product_fold: false
+  coil_position: MyText
+  spin_type: MyText
+  notes: MyText

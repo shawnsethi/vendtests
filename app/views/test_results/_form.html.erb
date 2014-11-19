@@ -1,0 +1,26 @@
+<%= form_for([@test_case, @test_case.test_results.build]) do |f| %>
+
+<table border="1">
+  <tr>
+    <th><%= f.label :quantity_remaining %></th>
+	<th><%= f.label :temperature %></th>
+	<th><%= f.label :spin_start_time %></th>
+	<th><%= f.label :spin_end_time %></th>
+	<th><%= f.label :drop_detected %></th>
+	<th><%= f.label :vend_rating %></th>
+	<th><%= f.label :condition_of_product %></th>
+	<th><%= f.label :notes %></th>
+  </tr>
+    <tr>
+      <td><%= f.number_field :quantity_remaining  %></td>
+	  <td><%= f.number_field :temperature  %></td>
+	  <td><%= f.datetime_select :spin_start_time  %></td>
+	  <td><%= f.datetime_select :spin_end_time  %></td>
+	  <td><%= f.check_box :drop_detected  %></td>
+	  <td><%= f.number_field :vend_rating  %></td>
+	  <td><%= f.number_field :condition_of_product  %></td>
+	  <td><%= f.text_field :notes  %></td>
+    </tr>
+</table>
+<%= f.submit %>
+<% end %>

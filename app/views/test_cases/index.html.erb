@@ -1,0 +1,50 @@
+<center>
+
+<h1>Vengo Product Test Cases</h1>
+
+<table border="1">
+  <tr>
+	<th>Test Case #</th>
+    <th>Product</th>
+    <th>Person</th>
+    <th>Machine</th>
+    <th>Door Position</th>
+    <th>Stock Method</th>
+    <th>Vengo Box?</th>
+    <th>Coil Type</th>
+    <th>Bay</th>
+    <th>Arduino Version</th>
+    <th>Jiggle?</th>
+    <th>Product Fold?</th>
+    <th>Coil Position</th>
+    <th>Spin Type</th>
+    <th>Notes</th>
+	<th colspan="3"></th>
+  </tr>
+  <% @test_cases.each do |test_case| %>
+    <tr>
+	  <td><%= test_case.id %></td>
+      <td><%= test_case.product %></td>
+      <td><%= test_case.person %></td>
+	  <td><%= test_case.machine %></td>
+	  <td><%= test_case.door_position %></td>
+	  <td><%= test_case.stock_method %></td>
+	  <td><%= test_case.required_vengo_box %></td>
+	  <td><%= test_case.coil_type %></td>
+	  <td><%= test_case.bay %></td>
+	  <td><%= test_case.arduino_version %></td>
+	  <td><%= test_case.jiggle %></td>
+	  <td><%= test_case.product_fold %></td>
+	  <td><%= test_case.coil_position %></td>
+	  <td><%= test_case.spin_type %></td>
+	  <td><%= test_case.notes %></td>
+	  <td><%= link_to 'Show', test_case_path(test_case) %></td>
+	  <td><%= link_to 'Edit', edit_test_case_path(test_case) %></td>
+	  <td><%= link_to 'Delete', test_case_path(test_case), method: :delete, data: { confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br><br><%= link_to 'New Test Case', new_test_case_path %>
+
+</center>

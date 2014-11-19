@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quantity_remaining: 1
+  temperature: 1
+  spin_start_time: 2014-11-13 14:28:24
+  spin_end_time: 2014-11-13 14:28:24
+  drop_detected: false
+  vend_rating: 1
+  condition_of_product: 1
+  notes: MyText
+  test_case: 
+
+two:
+  quantity_remaining: 1
+  temperature: 1
+  spin_start_time: 2014-11-13 14:28:24
+  spin_end_time: 2014-11-13 14:28:24
+  drop_detected: false
+  vend_rating: 1
+  condition_of_product: 1
+  notes: MyText
+  test_case: 

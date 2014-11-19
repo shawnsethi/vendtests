@@ -1,0 +1,91 @@
+<%= form_for @test_case do |f| %>
+<center>
+	
+	
+    <% if @test_case.errors.any? %>
+      <div id="error_explanation">
+  		<h2><%= pluralize(@test_cases.errors.count, "error")%> prohibited this Test Case from being saved:</h2>
+  		<ul>
+  			<% @test_cases.errors.full_messages.each do |msg| %>
+  			  <li><%= msg %></li>
+  			<% end %>
+  		</ul>
+  	</div>
+    <% end %>
+	
+	
+  <p>
+    <%= f.label :product %><br>
+    <%= f.text_field :product %>
+  </p>
+  
+  <p>
+    <%= f.label :person %><br>
+    <%= f.text_field :person %>
+  </p>
+  
+  <p>
+    <%= f.label :machine %><br>
+    <%= f.text_field :machine %>
+  </p>
+  
+  <p>
+    <%= f.label :door_position %><br>
+    <%= f.select :door_position, [['FORWARD', 'forward'], ['MID', 'mid'], ['AFT', 'aft']] %>
+  </p>
+  
+  <p>
+    <%= f.label :stock_method %><br>
+    <%= f.text_field :stock_method %>
+  </p>
+  
+  <p>
+    <%= f.label :required_vengo_box %><br>
+    <%= f.check_box :required_vengo_box %>
+  </p>
+  
+  <p>
+    <%= f.label :coil_type %><br>
+    <%= f.number_field :coil_type %>
+  </p>
+  
+  <p>
+    <%= f.label :bay %><br>
+    <%= f.number_field :bay %>
+  </p>
+  
+  <p>
+    <%= f.label :arduino_version %><br>
+    <%= f.text_field :arduino_version %>
+  </p>
+  
+  <p>
+    <%= f.label :jiggle %><br>
+    <%= f.check_box :jiggle %>
+  </p>
+  
+  <p>
+    <%= f.label :product_fold %><br>
+    <%= f.check_box :product_fold %>
+  </p>
+  
+  <p>
+    <%= f.label :coil_position %><br>
+    <%= f.text_field :coil_position %>
+  </p>
+  
+  <p>
+    <%= f.label :spin_type %><br>
+    <%= f.text_field :spin_type %>
+  </p>
+ 
+  <p>
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+</center>
+<% end %>

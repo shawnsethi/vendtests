@@ -1,0 +1,13 @@
+  <tr>
+    <td><%= test_result.quantity_remaining %></td>
+	<td><%= test_result.temperature %></td>
+	<td><%= test_result.spin_start_time %></td>
+	<td><%= test_result.spin_end_time %></td>
+	<td><%= test_result.drop_detected %></td>
+	<td><%= test_result.vend_rating %></td>
+	<td><%= test_result.condition_of_product %></td>
+	<td><%= test_result.notes %></td>
+	<td><%= link_to 'Delete', [test_result.test_case, test_result], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+
